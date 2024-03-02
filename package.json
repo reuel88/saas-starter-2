@@ -8,6 +8,7 @@
     "check:fix": "check-dependency-version-consistency . --fix",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
     "build": "turbo build"
   },
   "devDependencies": {
