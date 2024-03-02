@@ -4,13 +4,13 @@
     "outDir": "dist"
   },
   "include": [
+    "coverage",
     "src",
+    "turbo",
     "vite.config.mts",
-    "vitest.setup.ts",
-    "turbo"
+    "vitest.setup.ts"
   ],
   "exclude": [
-    "coverage",
     "dist",
     "node_modules"
   ]

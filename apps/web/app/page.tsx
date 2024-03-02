@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { Card } from "@repo/ui/card";
-import { Code } from "@repo/ui/code";
+import { Button, Card, Code } from "@repo/ui/components";
 import styles from "./page.module.css";
-import { Button } from "@repo/ui/button";
 
 function Gradient({
   conic,
