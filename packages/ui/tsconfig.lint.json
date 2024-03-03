@@ -7,11 +7,15 @@
     "coverage",
     "src",
     "turbo",
+    "postcss.config.js",
+    "prettier.config.js",
+    "tailwind.config.js",
     "vite.config.mts",
     "vitest.setup.ts"
   ],
   "exclude": [
     "dist",
     "node_modules"
-  ]
+  ],
+
 }

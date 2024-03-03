@@ -20,6 +20,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.0.4",
     "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
