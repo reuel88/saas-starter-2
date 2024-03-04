@@ -1,1 +1,14 @@
-module.exports = require("@repo/tailwind-config/tailwind.config")
+const baseConfig = require("@repo/tailwind-config/tailwind.config");
+
+module.exports = {
+  presets: [baseConfig],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
+  },
+};

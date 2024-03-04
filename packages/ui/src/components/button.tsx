@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
+import { Button as ShadcnButton } from "./ui/button";
 
 interface ButtonProps {
   children: ReactNode;
@@ -10,11 +11,11 @@ interface ButtonProps {
 
 export const Button = ({ children, className, appName }: ButtonProps) => {
   return (
-    <button
+    <ShadcnButton
       className={className}
       onClick={() => alert(`Hello from your ${appName} app!`)}
     >
       {children}
-    </button>
+    </ShadcnButton>
   );
 };
