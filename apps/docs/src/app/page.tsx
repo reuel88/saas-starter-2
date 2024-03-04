@@ -1,4 +1,4 @@
-import { Button, Card, Code } from "@repo/ui/components";
+import { TurboButton, TurboCard, TurboCode } from "@repo/ui/components";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -55,7 +55,7 @@ export default function Page(): JSX.Element {
       <div className={styles.description}>
         <p>
           examples/basic&nbsp;
-          <Code className={styles.code}>docs</Code>
+          <TurboCode className={styles.code}>docs</TurboCode>
         </p>
         <div>
           <a
@@ -76,9 +76,9 @@ export default function Page(): JSX.Element {
         </div>
       </div>
 
-      <Button appName="docs" className={styles.button}>
+      <TurboButton appName="docs" className={styles.button}>
         Click me!
-      </Button>
+      </TurboButton>
 
       <div className={styles.hero}>
         <div className={styles.heroContent}>
@@ -132,9 +132,14 @@ export default function Page(): JSX.Element {
 
       <div className={styles.grid}>
         {LINKS.map(({ title, href, description }) => (
-          <Card className={styles.card} href={href} key={title} title={title}>
+          <TurboCard
+            className={styles.card}
+            href={href}
+            key={title}
+            title={title}
+          >
             {description}
-          </Card>
+          </TurboCard>
         ))}
       </div>
     </main>

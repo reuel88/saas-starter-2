@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "prepare": "husky",
+    "ui:add": "pnpm --filter @repo/ui ui:add",
     "dev": "turbo dev",
     "check": "check-dependency-version-consistency .",
     "check:fix": "check-dependency-version-consistency . --fix",

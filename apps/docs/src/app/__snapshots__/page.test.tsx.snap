@@ -39,11 +39,6 @@ exports[`should render the main content with correct styles and layout 1`] = `
           </a>
         </div>
       </div>
-      <div
-        class="py-2 p-4 bg-blue-500"
-      >
-        Hello
-      </div>
       <button
         class="button"
       >

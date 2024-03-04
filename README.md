@@ -10,6 +10,35 @@ Run the following command:
 npx create-turbo@latest
 ```
 
+### Add ui components
+
+Use the pre-made script:
+
+```sh
+pnpm ui:add <component-name>
+```
+
+> This works just like the add command in the `shadcn/ui` CLI.
+
+### Add a new app
+
+Turborepo offer a simple command to add a new app:
+
+```sh
+pnpm turbo gen workspace --name <app-name>
+```
+
+This will create a new empty app in the `apps` directory.
+
+If you want, you can copy an existing app with:
+
+```sh
+pnpm turbo gen workspace --name <app-name> --copy
+```
+
+> [!NOTE]
+> Remember to run `pnpm install` after copying an app.
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
