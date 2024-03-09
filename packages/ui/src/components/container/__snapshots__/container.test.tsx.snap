@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Container > should render a div container with children when no 'as' prop is passed 1`] = `
+<body>
+  <div>
+    <div
+      class="mx-auto max-w-7xl px-6 lg:px-8"
+      data-testid="container"
+    >
+      Test
+    </div>
+  </div>
+</body>
+`;

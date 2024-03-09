@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Wrapper > should render a div element with children when no props are passed 1`] = `
+<body>
+  <div>
+    <div
+      class="bg-background text-foreground"
+    >
+      Test
+    </div>
+  </div>
+</body>
+`;

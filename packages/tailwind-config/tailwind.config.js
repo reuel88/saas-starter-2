@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["../../packages/ui/src/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "../../packages/ui/src/**/*.{js,ts,jsx,tsx,mdx,css}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx,css}",
+  ],
   theme: {
     container: {
       center: true,
@@ -45,6 +48,7 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         hue: {
+          color: "hsl(var(--hue-color))",
           50: "hsl(var(--hue-50))",
           100: "hsl(var(--hue-100))",
           200: "hsl(var(--hue-200))",

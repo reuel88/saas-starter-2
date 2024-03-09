@@ -1,9 +1,12 @@
 import i18nConfig from "@repo/i18n/config";
-import "@repo/tailwind-config/globals.css";
+import { TranslationContextProvider } from "@repo/i18n/contexts";
+import initTranslations from "@repo/i18n/i18n";
 import { AppContextProvider } from "@repo/ui/contexts";
+import "@repo/tailwind-config/globals.css";
 import { dir } from "i18next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,19 +19,27 @@ export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
 }
 
-type RootLayoutProps = Readonly<{
-  children: React.ReactNode;
+type LayoutProps = Readonly<{
+  children: ReactNode;
   params: { locale: string };
 }>;
 
-export default function RootLayout({
+export default async function Layout({
   children,
   params: { locale },
-}: RootLayoutProps) {
+}: LayoutProps) {
+  const { resources, namespaces } = await initTranslations(locale);
+
   return (
     <html lang={locale} dir={dir(locale)} suppressHydrationWarning>
       <body className={inter.className}>
-        <AppContextProvider>{children}</AppContextProvider>
+        <TranslationContextProvider
+          namespaces={namespaces}
+          locale={locale}
+          resources={resources}
+        >
+          <AppContextProvider>{children}</AppContextProvider>
+        </TranslationContextProvider>
       </body>
     </html>
   );

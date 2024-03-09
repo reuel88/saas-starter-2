@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { ThemeContextProvider } from "../theme-context-provider";
+import { ToasterWrapper } from "../../components";
 
 type AppContextProviderProps = {
   children: ReactNode;
@@ -13,7 +14,7 @@ export const AppContextProvider = ({ children }: AppContextProviderProps) => {
       enableSystem
       disableTransitionOnChange
     >
-      {children}
+      <ToasterWrapper>{children}</ToasterWrapper>
     </ThemeContextProvider>
   );
 };

@@ -34,6 +34,8 @@
 
         --radius: 0.5rem;
 
+        --hue-color: 195 94% 20%; /* --hue-700 */
+
         --hue-50: 157 100% 95%;
         --hue-100: 165 100% 90%;
         --hue-200: 169 100% 81%;
@@ -75,6 +77,8 @@
         --border: 217.2 32.6% 30%;
         --input: 217.2 32.6% 30%;
         --ring: 212.7 26.8% 83.9%;
+
+        --hue-color: 179 98% 52%; /* --hue-400 */
     }
 }
 
@@ -84,11 +88,5 @@
     }
     body {
         @apply bg-background text-foreground;
-    }
-}
-
-@layer components{
-    .text-hue-color {
-        @apply text-hue-700 dark:text-hue-400;
     }
 }

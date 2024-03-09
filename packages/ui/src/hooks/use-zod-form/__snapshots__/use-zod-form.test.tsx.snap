@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`useZodForm > render form correctly 1`] = `
+<body>
+  <div>
+    <form>
+      <input
+        name="name"
+      />
+      <input
+        name="age"
+      />
+    </form>
+  </div>
+</body>
+`;

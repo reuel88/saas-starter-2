@@ -9,16 +9,16 @@
     "./i18n": "./src/i18n.ts"
   },
   "dependencies": {
-    "i18next": "^23.10.0",
+    "i18next": "^23.10.1",
     "i18next-resources-to-backend": "^1.2.0",
     "next-i18n-router": "^5.3.1",
-    "react-i18next": "^14.0.5"
+    "react-i18next": "^14.1.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/react": "^18.2.46",
-    "@types/react-dom": "^18.2.18",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
     "react": "^18.2.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   }
 }

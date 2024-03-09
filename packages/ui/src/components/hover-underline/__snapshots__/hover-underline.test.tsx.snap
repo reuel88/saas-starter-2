@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HoverUnderline > should render correctly 1`] = `
+<body>
+  <div>
+    <span
+      class="group"
+    >
+      <span>
+        Test
+      </span>
+      <span
+        aria-hidden="true"
+        class="block h-1 w-0 bg-hue-500 transition-all group-hover:w-full"
+      />
+    </span>
+  </div>
+</body>
+`;

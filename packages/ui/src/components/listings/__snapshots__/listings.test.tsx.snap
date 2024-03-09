@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Listings > should render search results header 1`] = `
+<body>
+  <div>
+    <section>
+      <header
+        class="border-b py-4"
+      >
+        <h2
+          class="text-xl"
+        >
+          Search Results
+        </h2>
+        <h3
+          class="text-muted-foreground"
+        >
+          <strong
+            class="text-hue-color"
+          >
+            10 results
+          </strong>
+           for
+           
+          <strong
+            class="text-hue-color"
+          >
+            Cars
+          </strong>
+           in
+           
+          <strong
+            class="text-hue-color"
+          >
+            Locations
+          </strong>
+        </h3>
+      </header>
+      <div
+        class="grid grid-cols-2 gap-4 py-8 lg:grid-cols-3"
+      />
+    </section>
+  </div>
+</body>
+`;

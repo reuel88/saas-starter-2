@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductLoader > should render correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="rounded-lg border bg-card text-card-foreground shadow-sm"
+    >
+      <div
+        class="animate-pulse rounded-md bg-muted aspect-square"
+      />
+      <div
+        class="flex flex-col p-6 space-y-0"
+      >
+        <div
+          class="py-1"
+        >
+          <div
+            class="animate-pulse rounded-md bg-muted h-4"
+          />
+        </div>
+        <div
+          class="py-[5px]"
+        >
+          <div
+            class="animate-pulse rounded-md bg-muted h-[18px]"
+          />
+        </div>
+      </div>
+      <div
+        class="flex items-center p-6 pt-0"
+      >
+        <div
+          class="animate-pulse rounded-md bg-muted h-10 w-full"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`useCookie > should handle null values for the cookie and default value 1`] = `
+<body>
+  <div>
+    <div>
+      <div
+        data-testid="value"
+      />
+      <button>
+        Set
+      </button>
+      <button>
+        Remove
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`useCookie > should return cookie value when it exists 1`] = `
+<body>
+  <div>
+    <div>
+      <div
+        data-testid="value"
+      >
+        cookieValue
+      </div>
+      <button>
+        Set
+      </button>
+      <button>
+        Remove
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`useCookie > should return default value when cookie doesn't exist 1`] = `
+<body>
+  <div>
+    <div>
+      <div
+        data-testid="value"
+      >
+        default
+      </div>
+      <button>
+        Set
+      </button>
+      <button>
+        Remove
+      </button>
+    </div>
+  </div>
+</body>
+`;

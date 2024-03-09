@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UserAvatar > should render an Avatar component with a default image source when no imageSrc prop is provided 1`] = `
+<body>
+  <div>
+    <span
+      class="relative flex shrink-0 overflow-hidden rounded-full h-8 w-8"
+    >
+      <img
+        class="aspect-square h-full w-full"
+        src="logo.png"
+      />
+    </span>
+  </div>
+</body>
+`;
+
+exports[`UserAvatar > should render an BotImage component with the provided image source 1`] = `
+<body>
+  <div>
+    <span
+      class="relative flex shrink-0 overflow-hidden rounded-full h-8 w-8"
+    >
+      <img
+        class="aspect-square h-full w-full"
+        src="https://github.com/shadcn.png"
+      />
+    </span>
+  </div>
+</body>
+`;

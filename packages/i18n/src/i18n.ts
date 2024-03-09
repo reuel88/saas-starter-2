@@ -5,7 +5,7 @@ import i18nConfig from "./i18n.config";
 
 export default async function initTranslations(
   locale: string,
-  namespaces: string[],
+  namespaces: string[] = ["translation"],
   i18nInstance?: i18n,
   resources?: Resource,
 ) {
@@ -37,5 +37,6 @@ export default async function initTranslations(
     i18n: i18nInstance,
     resources: i18nInstance.services.resourceStore.data,
     t: i18nInstance.t,
+    namespaces,
   };
 }
