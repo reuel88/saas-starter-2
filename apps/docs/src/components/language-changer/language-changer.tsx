@@ -44,7 +44,7 @@ export const LanguageChanger = () => {
         onChange={handleChange}
         value={currentLocale}
       >
-        <option value="en">English</option>
+        <option value="en-AU">English</option>
         <option value="de">Deutsch</option>
         <option value="ja">日本語</option>
       </select>

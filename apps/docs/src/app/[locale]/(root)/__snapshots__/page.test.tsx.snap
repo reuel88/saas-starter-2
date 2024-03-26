@@ -63,7 +63,7 @@ exports[`should render the main content with correct styles and layout 1`] = `
             class="text-black"
           >
             <option
-              value="en"
+              value="en-AU"
             >
               English
             </option>

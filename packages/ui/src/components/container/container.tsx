@@ -1,21 +1,21 @@
-import {
-  ComponentPropsWithoutRef,
-  ElementType,
-  ForwardedRef,
-  forwardRef,
-} from "react";
+import { ElementType, forwardRef } from "react";
 import { cn } from "@repo/utilities";
-import { BoxProps } from "../../types/box";
+import {
+  PolymorphicComponentPropWithRef,
+  PolymorphicRef,
+} from "../box/box.types";
+
+type ContainerProps<C extends ElementType> = PolymorphicComponentPropWithRef<
+  C,
+  {
+    className?: string;
+  }
+>;
 
 export const Container = forwardRef(
   <T extends ElementType = "div">(
-    {
-      as,
-      children,
-      className = "",
-      ...rest
-    }: BoxProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof BoxProps<T>>,
-    ref: ForwardedRef<any>,
+    { as, children, className = "", ...rest }: ContainerProps<T>,
+    ref: PolymorphicRef<T>,
   ) => {
     const Component = as || "div";
 

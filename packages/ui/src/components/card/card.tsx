@@ -1,22 +1,22 @@
 import * as React from "react";
 import { cn } from "@repo/utilities";
+import { ElementType, forwardRef } from "react";
 import {
-  ComponentPropsWithoutRef,
-  ElementType,
-  ForwardedRef,
-  forwardRef,
-} from "react";
-import { BoxProps } from "../../types/box";
+  PolymorphicComponentPropWithRef,
+  PolymorphicRef,
+} from "../box/box.types";
+
+type CardProps<C extends ElementType> = PolymorphicComponentPropWithRef<
+  C,
+  {
+    className?: string;
+  }
+>;
 
 const Card = forwardRef(
   <T extends ElementType = "div">(
-    {
-      as,
-      children,
-      className = "",
-      ...rest
-    }: BoxProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof BoxProps<T>>,
-    ref: ForwardedRef<any>,
+    { as, children, className = "", ...rest }: CardProps<T>,
+    ref: PolymorphicRef<T>,
   ) => {
     const Component = as || "div";
 
@@ -36,15 +36,17 @@ const Card = forwardRef(
 );
 Card.displayName = "Card";
 
+type CardHeaderProps<C extends ElementType> = PolymorphicComponentPropWithRef<
+  C,
+  {
+    className?: string;
+  }
+>;
+
 const CardHeader = forwardRef(
   <T extends ElementType = "div">(
-    {
-      as,
-      children,
-      className = "",
-      ...rest
-    }: BoxProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof BoxProps<T>>,
-    ref: ForwardedRef<any>,
+    { as, children, className = "", ...rest }: CardHeaderProps<T>,
+    ref: PolymorphicRef<T>,
   ) => {
     const Component = as || "div";
 
@@ -61,15 +63,17 @@ const CardHeader = forwardRef(
 );
 CardHeader.displayName = "CardHeader";
 
+type CardTitleProps<C extends ElementType> = PolymorphicComponentPropWithRef<
+  C,
+  {
+    className?: string;
+  }
+>;
+
 const CardTitle = forwardRef(
   <T extends ElementType = "h3">(
-    {
-      as,
-      children,
-      className = "",
-      ...rest
-    }: BoxProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof BoxProps<T>>,
-    ref: ForwardedRef<any>,
+    { as, children, className = "", ...rest }: CardTitleProps<T>,
+    ref: PolymorphicRef<T>,
   ) => {
     const Component = as || "h3";
 
@@ -89,15 +93,18 @@ const CardTitle = forwardRef(
 );
 CardTitle.displayName = "CardTitle";
 
+type CardDescriptionProps<C extends ElementType> =
+  PolymorphicComponentPropWithRef<
+    C,
+    {
+      className?: string;
+    }
+  >;
+
 const CardDescription = forwardRef(
   <T extends ElementType = "p">(
-    {
-      as,
-      children,
-      className = "",
-      ...rest
-    }: BoxProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof BoxProps<T>>,
-    ref: ForwardedRef<any>,
+    { as, children, className = "", ...rest }: CardDescriptionProps<T>,
+    ref: PolymorphicRef<T>,
   ) => {
     const Component = as || "p";
 
@@ -114,15 +121,17 @@ const CardDescription = forwardRef(
 );
 CardDescription.displayName = "CardDescription";
 
+type CardContentProps<C extends ElementType> = PolymorphicComponentPropWithRef<
+  C,
+  {
+    className?: string;
+  }
+>;
+
 const CardContent = forwardRef(
   <T extends ElementType = "div">(
-    {
-      as,
-      children,
-      className = "",
-      ...rest
-    }: BoxProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof BoxProps<T>>,
-    ref: ForwardedRef<any>,
+    { as, children, className = "", ...rest }: CardContentProps<T>,
+    ref: PolymorphicRef<T>,
   ) => {
     const Component = as || "div";
 
@@ -135,15 +144,17 @@ const CardContent = forwardRef(
 );
 CardContent.displayName = "CardContent";
 
+type CardFooterProps<C extends ElementType> = PolymorphicComponentPropWithRef<
+  C,
+  {
+    className?: string;
+  }
+>;
+
 const CardFooter = forwardRef(
   <T extends ElementType = "div">(
-    {
-      as,
-      children,
-      className = "",
-      ...rest
-    }: BoxProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof BoxProps<T>>,
-    ref: ForwardedRef<any>,
+    { as, children, className = "", ...rest }: CardFooterProps<T>,
+    ref: PolymorphicRef<T>,
   ) => {
     const Component = as || "div";
 
