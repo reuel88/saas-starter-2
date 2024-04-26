@@ -22,8 +22,8 @@
     "husky": "^9.0.11",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
-    "tailwindcss": "^3.4.1",
-    "turbo": "^1.13.0"
+    "tailwindcss": "^3.4.3",
+    "turbo": "^1.13.3"
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {
