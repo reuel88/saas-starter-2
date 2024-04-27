@@ -1,7 +1,8 @@
 "use client";
+
 import React, { useEffect, useRef } from "react";
-import * as LR from "@uploadcare/blocks";
 import { useRouter } from "next/navigation";
+import * as LR from "@uploadcare/blocks";
 
 type Props = {
   onUpload: (e: string) => any;
@@ -35,7 +36,7 @@ const UploadCareButton = ({ onUpload }: Props) => {
 
   return (
     <div>
-      <lr-config ctx-name="my-uploader" pubkey="a9428ff5ff90ae7a64eb" />
+      <lr-config ctx-name="my-uploader" pubkey="c9c31eff1dd80f2e738e" />
 
       <lr-file-uploader-regular
         ctx-name="my-uploader"

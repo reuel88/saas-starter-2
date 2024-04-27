@@ -1,8 +1,9 @@
 "use client";
 
-import React, { use, useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { EditUserProfileSchema } from "@/lib/types";
 import {
@@ -15,7 +16,6 @@ import {
 } from "../ui/form";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import { Loader2 } from "lucide-react";
 
 type Props = {
   user: any;
@@ -57,7 +57,7 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg">User full name</FormLabel>
+              <FormLabel className="text-lg">First Name</FormLabel>
               <FormControl>
                 <Input {...field} placeholder="Name" />
               </FormControl>
@@ -65,6 +65,7 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
             </FormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="email"
@@ -83,9 +84,10 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
             </FormItem>
           )}
         />
+
         <Button
           type="submit"
-          className="self-start hover:bg-[#2F006B] hover:text-white "
+          className="self-start hover:bg-[#2F006B] hover:text-white"
         >
           {isLoading ? (
             <>

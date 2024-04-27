@@ -1,7 +1,7 @@
 import Navbar from "@/components/global/navbar";
 import { Button } from "@/components/ui/button";
 import { ContainerScroll } from "@/components/global/container-scroll-animation";
-import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards'";
+import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
 import { clients, products } from "@/lib/constant";
 import { HeroParallax } from "@/components/global/connect-parallax";
 import { CardBody, CardContainer, CardItem } from "@/components/global/3d-card";
@@ -14,7 +14,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center">
       <Navbar />
 
-      <section className="relative flex  h-screen w-full  flex-col items-center !overflow-visible rounded-md bg-neutral-950  antialiased">
+      <section className="relative flex  h-screen w-full  flex-col items-center !overflow-visible rounded-md bg-neutral-950 antialiased">
         <div className="absolute inset-0  h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_35%,#223_100%)]"></div>
         <div className="mt-[-100px] flex flex-col md:mt-[-50px]">
           <ContainerScroll

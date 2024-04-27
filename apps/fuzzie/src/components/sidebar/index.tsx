@@ -1,7 +1,11 @@
 "use client";
+
+import { Database, GitBranch, LucideMousePointerClick } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { ModeToggle } from "@/components/global/mode-toggle";
+import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
   TooltipContent,
@@ -9,10 +13,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { menuOptions } from "@/lib/constant";
-import clsx from "clsx";
-import { Separator } from "@/components/ui/separator";
-import { Database, GitBranch, LucideMousePointerClick } from "lucide-react";
-import { ModeToggle } from "@/components/global/mode-toggle";
+import { cn } from "@/lib/utils";
 
 type Props = {};
 
@@ -20,9 +21,9 @@ const MenuOptions = (props: Props) => {
   const pathName = usePathname();
 
   return (
-    <nav className=" flex h-screen flex-col  items-center justify-between gap-10 overflow-scroll  px-2 py-6 dark:bg-black">
+    <nav className=" flex h-screen flex-col items-center justify-between gap-10 overflow-scroll px-2 py-6 dark:bg-black">
       <div className="flex flex-col items-center justify-center gap-8">
-        <Link className="flex flex-row font-bold " href="/">
+        <Link className="flex flex-row font-bold" href="/">
           fuzzie.
         </Link>
 
@@ -34,8 +35,8 @@ const MenuOptions = (props: Props) => {
                   <TooltipTrigger>
                     <Link
                       href={menuItem.href}
-                      className={clsx(
-                        "group flex h-8 w-8 scale-[1.5] cursor-pointer  items-center justify-center rounded-lg  p-[3px]",
+                      className={cn(
+                        "group flex h-8 w-8 scale-[1.5] cursor-pointer items-center justify-center rounded-lg p-[3px]",
                         {
                           "bg-[#EEE0FF] dark:bg-[#2F006B] ":
                             pathName === menuItem.href,

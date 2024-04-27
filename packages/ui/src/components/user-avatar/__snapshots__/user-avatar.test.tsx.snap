@@ -48,38 +48,6 @@ exports[`UserAvatar > should render the fallback 'JS' initially 1`] = `
 </body>
 `;
 
-exports[`UserAvatar > should render the fallback J initially 1`] = `
-<body>
-  <div>
-    <span
-      class="relative flex shrink-0 overflow-hidden rounded-full h-10 w-10"
-    >
-      <span
-        class="flex h-full w-full items-center justify-center rounded-full bg-muted"
-      >
-        J
-      </span>
-    </span>
-  </div>
-</body>
-`;
-
-exports[`UserAvatar > should render the fallback JS initially 1`] = `
-<body>
-  <div>
-    <span
-      class="relative flex shrink-0 overflow-hidden rounded-full h-10 w-10"
-    >
-      <span
-        class="flex h-full w-full items-center justify-center rounded-full bg-muted"
-      >
-        JS
-      </span>
-    </span>
-  </div>
-</body>
-`;
-
 exports[`UserAvatar > should render the fallback empty string initially 1`] = `
 <body>
   <div>
@@ -89,22 +57,6 @@ exports[`UserAvatar > should render the fallback empty string initially 1`] = `
       <span
         class="flex h-full w-full items-center justify-center rounded-full bg-muted"
       />
-    </span>
-  </div>
-</body>
-`;
-
-exports[`UserAvatar > should render the fallback initially 1`] = `
-<body>
-  <div>
-    <span
-      class="relative flex shrink-0 overflow-hidden rounded-full h-10 w-10"
-    >
-      <span
-        class="flex h-full w-full items-center justify-center rounded-full bg-muted"
-      >
-        JS
-      </span>
     </span>
   </div>
 </body>
